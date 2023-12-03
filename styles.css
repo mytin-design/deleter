@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:  border-box;
+}
+
+html {
+    background: #eee;
+}
+
+.appMain {
+    margin: 2pc auto;
+    display: flex;
+    flex-flow: column;
+    gap: 2pc;
+    align-items: center;
+    justify-items: space-around;
+    width: 70%;
+    padding: 1pc;
+    border-radius: .4pc;
+}
+.app {
+    margin: 2pc auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    background-color: #fff;
+    padding: 1pc;
+    border-radius: .4pc;
+}
+
+.noteMain {
+    padding: 1pc;
+    height: 20pc;
+    width: 25pc;
+}
+
+.mynotes {
+    height: 70%;   
+}
+
+.innernotes {
+    height: 100%;
+    padding: 1pc;
+}
+
+.editactions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: .5pc;
+    border: .1pc solid #eee;
+    padding: .5pc;
+}
+
+
+.dbtn{
+    height: 1.5pc;
+    width: 5pc;
+    border-radius: 4pc;
+    border: none;
+    background-color: #eee;   
+}
+
+.dbtn:hover {
+    background-color: #999;
+}
+
+.delnote:hover {
+    background-color: #f00;
+    color: #fff;
+}
+
+.hideacts {
+    display: none;
+}
+
+
+
+
+.deletedNotes {
+    padding: 1pc;
+    border-left: .1pc solid #eee;
+    height: 20pc;
+    width: 25pc;
+
+}
+
+.notepads {
+    padding: .5pc;
+}
+
+#noteId {
+    height: 2.5pc;
+    width: 70%;
+    padding-left: 1pc;
+    border: none;
+    border-bottom: .1pc solid gray;
+    outline: none; /* screen readers require outlines - so consider not removing them */
+}
+
+#save {
+    font-size: 1.5rem;
+    font-weight: 800;
+    background-color: white;
+    border: none;  
+    width: 2.5pc;
+    height: 2.5pc;
+    border-radius: 100%; 
+    border: .1pc solid #eee;
+
+}
+
+#save:hover {
+    border: .1pc solid #999;
+    background-color: white;
+}
+
+.addNotes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tabbtn {
+    height: 2.5pc;
+    width: 8pc;
+    border-radius: 4pc;
+    border: none;
+    background-color: #fff;
+}
+
+.tabbtn:hover {
+    background-color: #eee;
+}

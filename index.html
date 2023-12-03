@@ -1,0 +1,63 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+    <head>
+        <title>Notepad</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="" href="styles.css">
+        <link rel="icon" href="">
+    </head>
+    <body>
+
+        <article class="appMain">
+            <article class="app">
+                <section class="noteMain">
+                    <div class="titleone">
+                    <h1 class="notetitle">MyNotes</h1>
+                    </div>
+    
+                    <div class="mynotes">
+                        <div  class="innernotes">
+                            <!--This div should appear when a note is hovered
+                            objective: to provide edit actions-->
+                            <div class="hideacts editactions">
+                                <button class="delnote dbtn" onclick="deleteThis()">&times;</button>
+                                <button class="ednote dbtn" onclick="editNote()">&wr;</button>
+
+                            </div>
+                        </div>
+                    </div>
+    
+                    <section class="notepads">
+                        <div class="addNotes">
+                            <input tabindex="5" type="text" id="noteId" class="noteme" placeholder="Write here...">
+                            <button id="save" onclick="saveComment()">></button>
+                        </div>
+                    </section>
+                    
+                </section>
+    
+    
+                
+                <section class="deletedNotes">
+                    <div class="deltitle">
+                        <h4 class="deltitle">Currently Deleted</h4>
+                    </div>
+                    <div class="deletedbox">
+    
+                    </div>
+                </section>
+                
+            </article>
+    
+            <article class="controls">
+                <div class="tabbtns">
+                    <button id="currentNotes" class="tabbtn cbtn" onclick="openSection()">My Notes</button>
+                    <button id="deletedNotes" class="tabbtn dbtn" onclick="openSection()">Deleted Notes</button>
+                </div>
+            </article>
+        </article>
+        
+    </body>
+    <script src="scriptv1.js"></script>
+</html>
